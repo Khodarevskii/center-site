@@ -1,0 +1,48 @@
+@use '../root/root.scss' as *;
+.header{
+    margin-top: 8px;
+    & address{
+        display: flex;
+        justify-content: space-between;
+        & p,
+        & a{
+            font-size: $p2;
+            font-weight: 500;
+            line-height: 110.00000000000001%;
+            color: rgba(0, 0, 0, 0.5);
+        }
+    }
+
+    &__menu{
+         & nav{
+            display: none;
+         }
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         & .burger-menu{
+            height: 24px;
+            width: 24px;
+            position: relative;
+
+            &::after{
+                content: '';
+                position: absolute;
+                top: 7px;
+                height: 2px;
+                background: $accent-color;
+                width: 100%;
+            }
+            
+            &::before{
+                content: '';
+                position: absolute;
+                bottom: 7px;
+                height: 2px;
+                background: $accent-color;
+                width: 100%;
+            }
+         }
+    }
+
+}

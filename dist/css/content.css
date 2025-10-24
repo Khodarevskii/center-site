@@ -1,0 +1,90 @@
+/*!************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./src/scss/index.scss ***!
+  \************************************************************************************************************************************************************************************/
+.header {
+  margin-top: 8px;
+}
+.header address {
+  display: flex;
+  justify-content: space-between;
+}
+.header address p, .header address a {
+  font-size: clamp(0.75rem, 0.667rem + 0.37vw, 1rem);
+  font-weight: 500;
+  line-height: 110%;
+  color: rgba(0, 0, 0, 0.5);
+}
+.header__menu nav {
+  display: none;
+}
+.header__menu {
+  display: flex;
+  justify-content: space-between;
+}
+.header__menu .burger-menu {
+  height: 24px;
+  width: 24px;
+  position: relative;
+}
+.header__menu .burger-menu::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 2px;
+  background: #FA151C;
+  width: 100%;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Geologica";
+  src: local("Geologica"), url(/fonts/Geologica.ttf) format("truetype supports variations"), url(/fonts/Geologica.ttf) format("truetype-variations");
+}
+@font-face {
+  font-family: "Involve";
+  src: url(/fonts/Involve-Regular.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Involve";
+  src: url(/fonts/Involve-SemiBold.ttf) format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Involve";
+  src: url(/fonts/Involve-Medium.ttf) format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+body {
+  font-family: "Involve", sans-serif;
+  margin: 0;
+}
+
+address {
+  font-style: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+}
+
+p {
+  margin: 0;
+  line-height: 150%;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+.wrapper-inside {
+  max-width: 1440px;
+  margin: 0 auto;
+  width: calc(100% - 20px);
+}

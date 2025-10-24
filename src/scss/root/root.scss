@@ -1,0 +1,22 @@
+$column1:calc(100% / 8);
+$column2:calc(100% / 8 * 2);
+$column3:calc(100% / 8 * 3);
+$column4:50%;
+$column5:calc(100% / 8 * 5);
+$column6:calc(100% / 8 * 6);
+$column7:calc(100% / 8 * 7);
+$column8:100%;
+$accent-color:#FA151C;
+$text-color-contrast:rgba(255, 255, 255, 1);
+$text-color-accent:rgba(0, 0, 0, 1);
+$text-color-info:rgba(143, 143, 143, 1);
+$blackout:line-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0)),
+rgba(0, 0, 0, 0.4);
+$introHeading:clamp(1.875rem, 1.458rem + 1.852vw, 3.125rem);
+$p1:clamp(0.875rem, 0.792rem + 0.37vw, 1.125rem);
+$p2:clamp(0.75rem, 0.667rem + 0.37vw, 1rem);
+$h1:clamp(1.625rem, 1.292rem + 1.481vw, 2.625rem);
+$SmallTitle20:clamp(1.125rem, 1.083rem + 0.185vw, 1.25rem);
+$SmallTitle16:clamp(0.875rem, 0.833rem + 0.185vw, 1rem);
+$h3:clamp(1.125rem, 0.958rem + 0.741vw, 1.625rem);
+

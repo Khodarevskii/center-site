@@ -1,0 +1,60 @@
+@use './root/root.scss';
+@use './header/header.scss';
+
+@font-face {
+    font-display: swap;
+    font-family: 'Geologica';
+    src:
+      local('Geologica'),
+      url('../fonts/Geologica.ttf') format('truetype supports variations'),
+      url('../fonts/Geologica.ttf') format('truetype-variations');
+  }
+
+@font-face {  
+
+  font-family: 'Involve';  
+  src: url('../fonts/Involve-Regular.ttf') format('truetype');
+  font-weight: 400;  
+  font-style: normal;  
+}  
+@font-face {  
+
+  font-family: 'Involve';  
+  src: url('../fonts/Involve-SemiBold.ttf') format('truetype');
+  font-weight: 600;  
+  font-style: normal;  
+}
+@font-face {  
+  font-family: 'Involve';  
+  src: url('../fonts/Involve-Medium.ttf') format('truetype') ;
+  font-weight: 500;  
+  font-style: normal;  
+}  
+
+
+
+body{
+    font-family: 'Involve', sans-serif;
+    margin: 0;
+}
+address{
+    font-style: normal;
+}
+h1,h2,h3,h4,h5,h6{
+
+    font-weight: 600;
+}
+p{
+    margin: 0;
+    line-height: 150%;
+}
+a{
+    color: currentColor;
+    text-decoration: none;
+}
+
+.wrapper-inside{
+    max-width: 1440px;
+    margin: 0 auto;
+    width: calc(100% - 20px);
+}
