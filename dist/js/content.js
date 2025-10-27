@@ -29,6 +29,7 @@
       "./clock.png": "./src/images/clock.png",
       "./diner.svg": "./src/images/diner.svg",
       "./family.png": "./src/images/family.png",
+      "./footer-logo.png": "./src/images/footer-logo.png",
       "./garden.png": "./src/images/garden.png",
       "./gim.png": "./src/images/gim.png",
       "./hall.png": "./src/images/hall.png",
@@ -117,6 +118,10 @@
   "./src/images/family.png": (module, __unused_webpack_exports, __webpack_require__) => {
     "use strict";
     module.exports = __webpack_require__.p + "images/family.png";
+  },
+  "./src/images/footer-logo.png": (module, __unused_webpack_exports, __webpack_require__) => {
+    "use strict";
+    module.exports = __webpack_require__.p + "images/footer-logo.png";
   },
   "./src/images/garden.png": (module, __unused_webpack_exports, __webpack_require__) => {
     "use strict";

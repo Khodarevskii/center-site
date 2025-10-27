@@ -9,17 +9,17 @@
   justify-content: space-between;
 }
 .header address p, .header address a {
-  font-size: clamp(0.75rem, 0.667rem + 0.37vw, 1rem);
   font-weight: 500;
-  line-height: 110%;
-  color: rgba(0, 0, 0, 0.5);
+  font-size: 16px;
+  color: rgb(0, 0, 0);
 }
 .header__menu nav {
   display: none;
 }
 .header__menu {
-  display: flex;
+  display: none;
   justify-content: space-between;
+  align-items: center;
 }
 .header__menu .burger-menu {
   height: 24px;
@@ -29,9 +29,15 @@
 .header__menu .burger-menu::after {
   content: "";
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 7px;
+  height: 2px;
+  background: #FA151C;
+  width: 100%;
+}
+.header__menu .burger-menu::before {
+  content: "";
+  position: absolute;
+  bottom: 7px;
   height: 2px;
   background: #FA151C;
   width: 100%;
@@ -69,13 +75,14 @@ address {
   font-style: normal;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 600;
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
 }
 
-p {
+ul {
+  padding: 0;
   margin: 0;
-  line-height: 150%;
+  list-style: none;
 }
 
 a {
@@ -87,4 +94,27 @@ a {
   max-width: 1440px;
   margin: 0 auto;
   width: calc(100% - 20px);
+}
+
+.telegram {
+  fill: #FA151C;
+}
+
+h1 {
+  font-size: 42px;
+  font-weight: 600;
+  line-height: 110%;
+}
+
+h2 {
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 140%;
+}
+
+p {
+  font-family: "Geologica", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
 }

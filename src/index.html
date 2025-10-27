@@ -1,24 +1,91 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Главная</title>
 </head>
+
 <body>
-    <header class="header">
-        <div class="wrapper-inside">
-            <address>
-                <a href="tel:+79624426623">+7 (962) 442-66-23</a>
-                <p>г.Ставрополь, ул. Ленина 211а</p>
-            </address>
-            <div class="header__menu">
-                <div class="header__logo">
-                    <img src="./images/logo.png" alt="">
+
+        <header class="header">
+           <div class="container">
+                <div class="wrapper-inside">
+                    <address>
+                        <div class="address">
+                            <a href="tel:+79624426623">+7 (962) 442-66-23</a>
+                            <p>г.Ставрополь, ул. Ленина 211а</p>
+                        </div>
+                        <div class="contact">
+                            <div class="social">
+                                <a href="#"><svg width="20" height="20" viewBox=" 0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M1.375 9.14c5.369-2.382 8.949-3.952 10.74-4.71 5.114-2.166 6.177-2.542 6.87-2.555.152-.002.493.036.713.218.186.154.238.362.262.508.025.146.055.478.031.738-.277 2.965-1.476 10.16-2.086 13.48-.259 1.405-.767 1.877-1.259 1.923-1.07.1-1.882-.72-2.917-1.411-1.621-1.082-2.537-1.755-4.11-2.811-1.818-1.22-.64-1.89.396-2.986.272-.287 4.984-4.65 5.075-5.046.011-.05.022-.234-.086-.332-.107-.097-.266-.064-.381-.038-.163.038-2.752 1.78-7.768 5.228-.735.514-1.4.764-1.997.751-.658-.014-1.923-.378-2.863-.69-1.153-.381-2.07-.583-1.99-1.232.041-.337.498-.682 1.37-1.035z" />
+                                    </svg></a>
+                                <a href="#"><svg width="20" height="20" viewBox=" 0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M17 2.875C15.125 1 12.625 0 10 0 4.5 0 0 4.5 0 10c0 1.75.5 3.5 1.375 5L0 20l5.25-1.375c1.5.75 3.125 1.25 4.75 1.25 5.5 0 10-4.5 10-10 0-2.625-1.125-5.125-3-7zM10 18.25c-1.5 0-3-.375-4.25-1.125L5.5 17l-3.125.875.875-3L3 14.5c-.875-1.375-1.25-2.875-1.25-4.375 0-4.5 3.75-8.25 8.25-8.25 2.25 0 4.25.875 5.875 2.375 1.625 1.625 2.375 3.625 2.375 5.875 0 4.375-3.625 8.125-8.25 8.125zM14.5 12c-.25-.125-1.5-.75-1.75-.75-.25-.125-.375-.125-.5.125s-.625.75-.75 1c-.125.125-.25.125-.5.125-.25-.125-1-.375-2-1.25-.75-.625-1.25-1.5-1.375-1.75s0-.375.125-.5l.375-.375c.125-.125.125-.25.25-.375s0-.25 0-.375S7.875 6.5 7.625 6c-.125-.375-.375-.375-.5-.375h-.5c-.125 0-.375 0-.625.25S5.125 6.75 5.125 8s.875 2.375 1 2.625c.125.125 1.75 2.75 4.25 3.75 2.125.875 2.5.625 3 .625s1.5-.625 1.625-1.125c.25-.625.25-1.125.125-1.125-.125-.625-.375-.625-.625-.75z" />
+                                    </svg></a>
+                            </div>
+                            <a href="#" class="contact__booking"> <span><svg width="6" height="6" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="6" height="6" rx="3" stroke="none" />
+                                    </svg> Забронировать номер</span></a>
+                        </div>
+                    </address>
+                    <nav>
+                        <ul>
+                            <li>Номера</li>
+                            <li>Конференц-залы</li>
+                            <li>Ресторан</li>
+                            <li>Контакты</li>
+                        </ul>
+                    </nav>
+                    <div class="header__menu">
+                        <div class="header__logo">
+                            <img src="images/logo.png" alt="">
+                        </div>
+                        <div class="burger-menu"></div>
+                    </div>
                 </div>
-                <div class="burger-menu"></div>
-            </div>
-        </div>
-    </header>
+           </div>
+        </header>
+        <main>
+                <section class="booking">
+                   <div class="container">
+                        <img class="booking__background" src="images/main-image.png" alt="">
+                        <div class="wrapper-inside">
+                            <div class="booking__info">
+                                <div class="booking__info-text">
+                                    <h1>Отель для семьи и бизнеса</h1>
+                                    <p>С другой стороны сложившаяся структура организации способствует подготовки и реализации</p>
+                                </div>
+                                <div class="booking__rating">
+                                    <div class="star">
+                                        <svg width="18" height="18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.752 7.753a.375.375 0 01.21-.648l4.503-.534a.375.375 0 00.296-.215l1.9-4.118a.375.375 0 01.68 0l1.9 4.118c.055.118.166.2.296.215l4.503.534c.318.038.445.43.21.648l-3.329 3.079a.374.374 0 00-.113.348l.884 4.447a.375.375 0 01-.551.4l-3.957-2.214a.374.374 0 00-.366 0l-3.956 2.214a.375.375 0 01-.552-.4l.884-4.447a.375.375 0 00-.113-.348l-3.33-3.08z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                    </div>
+                                     <div class="star">
+                                        <svg width="18" height="18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.752 7.753a.375.375 0 01.21-.648l4.503-.534a.375.375 0 00.296-.215l1.9-4.118a.375.375 0 01.68 0l1.9 4.118c.055.118.166.2.296.215l4.503.534c.318.038.445.43.21.648l-3.329 3.079a.374.374 0 00-.113.348l.884 4.447a.375.375 0 01-.551.4l-3.957-2.214a.374.374 0 00-.366 0l-3.956 2.214a.375.375 0 01-.552-.4l.884-4.447a.375.375 0 00-.113-.348l-3.33-3.08z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                    </div>
+                                     <div class="star">
+                                        <svg width="18" height="18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.752 7.753a.375.375 0 01.21-.648l4.503-.534a.375.375 0 00.296-.215l1.9-4.118a.375.375 0 01.68 0l1.9 4.118c.055.118.166.2.296.215l4.503.534c.318.038.445.43.21.648l-3.329 3.079a.374.374 0 00-.113.348l.884 4.447a.375.375 0 01-.551.4l-3.957-2.214a.374.374 0 00-.366 0l-3.956 2.214a.375.375 0 01-.552-.4l.884-4.447a.375.375 0 00-.113-.348l-3.33-3.08z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div >
+                                <h2>Забронировать номер</h2>
+                                <form action="#" class="booking__form">
+                                    <label for="">
+                                        Заезд - Выезд
+                                        <input type="text">
+                                    </label>
+                                </form>
+                            </div>
+                        </div>
+                   </div>
+                </section>
+        </main>
 </body>
+
 </html>

@@ -1,0 +1,50 @@
+@use '../root/root.scss' as root;
+
+.booking{
+    position: relative;
+    & .container{
+        border-radius: 20px;
+        overflow: hidden;
+        min-height: 670px;
+         &::before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        background: root.$blackout;
+        }
+    }
+    
+   
+
+    &__background{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+        object-position: center;
+        z-index: 0;
+    }
+    &__info{
+        color: root.$text-color-contrast;
+        position: relative;
+        z-index: 2;
+        display: flex;
+        justify-content: space-between;
+        &-text p{
+            max-width: 398px;
+            color: rgba(255, 255, 255, 1);
+        }
+    }
+
+    &__rating{
+        display: flex;
+        gap: 10px;
+        & svg{
+            stroke: currentColor;
+        }
+    }
+}

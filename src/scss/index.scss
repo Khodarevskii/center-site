@@ -1,60 +1,133 @@
-@use './root/root.scss';
-@use './header/header.scss';
+@use "./root/root.scss" as root;
+@use "./header/header.scss";
+@use "./booking/booking.scss";
 
 @font-face {
-    font-display: swap;
-    font-family: 'Geologica';
-    src:
-      local('Geologica'),
-      url('../fonts/Geologica.ttf') format('truetype supports variations'),
-      url('../fonts/Geologica.ttf') format('truetype-variations');
+  font-display: swap;
+  font-family: "Geologica";
+  src:
+    local("Geologica"),
+    url("../fonts/Geologica.ttf") format("truetype supports variations"),
+    url("../fonts/Geologica.ttf") format("truetype-variations");
+}
+
+@font-face {
+  font-family: "Involve";
+  src: url("../fonts/Involve-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Involve";
+  src: url("../fonts/Involve-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Involve";
+  src: url("../fonts/Involve-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+body {
+  font-family: "Involve", sans-serif;
+  margin: 0;
+}
+address {
+  font-style: normal;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+  & span {
+    display: flex;
+    align-items: center;
+    color: root.$text-color-accent;
+    transition: 0.6s ease;
+    gap: 11px;
+    & svg {
+      fill: root.$accent-color;
+      stroke: currentColor;
+      color: root.$accent-color;
+      transition: 0.6s ease;
+    }
+    &:hover svg {
+      fill: root.$accent-color-hover;
+      color: root.$accent-color-hover;
+    }
   }
-
-@font-face {  
-
-  font-family: 'Involve';  
-  src: url('../fonts/Involve-Regular.ttf') format('truetype');
-  font-weight: 400;  
-  font-style: normal;  
-}  
-@font-face {  
-
-  font-family: 'Involve';  
-  src: url('../fonts/Involve-SemiBold.ttf') format('truetype');
-  font-weight: 600;  
-  font-style: normal;  
-}
-@font-face {  
-  font-family: 'Involve';  
-  src: url('../fonts/Involve-Medium.ttf') format('truetype') ;
-  font-weight: 500;  
-  font-style: normal;  
-}  
-
-
-
-body{
-    font-family: 'Involve', sans-serif;
-    margin: 0;
-}
-address{
-    font-style: normal;
-}
-h1,h2,h3,h4,h5,h6{
-
-    font-weight: 600;
-}
-p{
-    margin: 0;
-    line-height: 150%;
-}
-a{
-    color: currentColor;
-    text-decoration: none;
+  &:hover span {
+    color: root.$text-color-accent-hover;
+  }
 }
 
-.wrapper-inside{
-    max-width: 1440px;
-    margin: 0 auto;
-    width: calc(100% - 20px);
+
+.container{
+  max-width: 1920px;
+  width: calc(100% - 80px);
+  position: relative;
+  margin: 0 auto;
+  height: 100%;
+}
+
+button {
+  padding: 20px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  border: none;
+  background: root.$accent-color;
+  color: root.$text-color-contrast;
+  border-radius: 30px;
+  transition: 0.6s ease;
+  cursor: pointer;
+  &:hover {
+    background-color: root.$accent-color-hover;
+  }
+  &::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    background-color: currentColor;
+    border-radius: 50%;
+  }
+}
+
+.wrapper-inside {
+  max-width: 1480px;
+  margin: 0 auto;
+  width: calc(100% - 20px);
+}
+
+.telegram {
+  fill: root.$accent-color;
+}
+
+h1 {
+  @include root.h1;
+}
+
+h2 {
+  @include root.h3;
+}
+
+p {
+  @include root.p1;
 }

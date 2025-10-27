@@ -7,16 +7,85 @@ $column6:calc(100% / 8 * 6);
 $column7:calc(100% / 8 * 7);
 $column8:100%;
 $accent-color:#FA151C;
+$accent-color-hover:rgba(207, 19, 25, 1);
 $text-color-contrast:rgba(255, 255, 255, 1);
 $text-color-accent:rgba(0, 0, 0, 1);
+$text-color-accent-hover:rgba(0, 0, 0, 0.7);
 $text-color-info:rgba(143, 143, 143, 1);
-$blackout:line-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0)),
+$blackout:linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0)),
 rgba(0, 0, 0, 0.4);
-$introHeading:clamp(1.875rem, 1.458rem + 1.852vw, 3.125rem);
-$p1:clamp(0.875rem, 0.792rem + 0.37vw, 1.125rem);
-$p2:clamp(0.75rem, 0.667rem + 0.37vw, 1rem);
-$h1:clamp(1.625rem, 1.292rem + 1.481vw, 2.625rem);
-$SmallTitle20:clamp(1.125rem, 1.083rem + 0.185vw, 1.25rem);
-$SmallTitle16:clamp(0.875rem, 0.833rem + 0.185vw, 1rem);
-$h3:clamp(1.125rem, 0.958rem + 0.741vw, 1.625rem);
+
+@mixin h1{
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 110.00000000000001%;
+}
+
+@mixin h2{
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 140%;
+}
+
+@mixin h3{
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 140%;
+}
+
+
+
+@mixin introHeading{
+    font-size: 50px;
+    font-weight: 600;
+}
+
+@mixin  p1{
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 150%;
+    color: $text-color-info;
+}
+
+@mixin  p2{
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+@mixin SmallTitle20{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 150%;
+}
+
+@mixin SmallTitle20-regular{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+
+@mixin SmallTitle16{
+    font-size:16px;
+    font-family: 'Geologica', sans-serif;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+
+
+
+@mixin footer-link{
+    font-family: 'Geologica',sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+@mixin button-text{
+    font-weight: 600;
+    font-size: 18px;
+    color: $text-color-contrast;
+}
+
 
