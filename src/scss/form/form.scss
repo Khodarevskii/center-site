@@ -1,0 +1,36 @@
+@use "../root/root.scss" as root;
+.form{
+    position: relative;
+    z-index: 1;
+    & svg{
+        stroke: currentColor;
+    }
+    
+    & fieldset{
+        display: flex;
+        align-items: center;
+        max-width: 621px;
+        justify-content: space-between;
+        padding: 5px 20px;
+        background: root.$glasscolor;
+        backdrop-filter: blur(24px);
+        border: 1px solid root.$glasscolor;
+        border-radius: 10px;
+        box-sizing: border-box;
+        flex: 4 1;
+        cursor: pointer;
+        & h3{
+            @include root.formLabel
+        }
+    }
+    & form{
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+    & button{
+        flex:1 1;
+        min-width: max-content;
+        text-align: center;
+    }
+}

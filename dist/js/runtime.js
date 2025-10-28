@@ -10,7 +10,7 @@
     var module = __webpack_module_cache__[moduleId] = {
       exports: {}
     };
-    __webpack_modules__[moduleId](module, module.exports, __webpack_require__);
+    __webpack_modules__[moduleId].call(module.exports, module, module.exports, __webpack_require__);
     return module.exports;
   }
   __webpack_require__.m = __webpack_modules__;
@@ -42,6 +42,15 @@
         }
       }
       return result;
+    };
+  })();
+  (() => {
+    __webpack_require__.n = module => {
+      var getter = module && module.__esModule ? () => module["default"] : () => module;
+      __webpack_require__.d(getter, {
+        a: getter
+      });
+      return getter;
     };
   })();
   (() => {

@@ -2,27 +2,86 @@
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./src/scss/index.scss ***!
   \************************************************************************************************************************************************************************************/
 .header {
-  margin-top: 8px;
+  margin-top: 13px;
+  position: relative;
+}
+.header .social {
+  display: flex;
+  gap: 10px;
+}
+.header .social a {
+  display: flex;
+}
+.header .address {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  min-height: 35px;
+}
+.header .contact {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.header .contact span {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  font-weight: 500;
 }
 .header address {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
-.header address p, .header address a {
+.header address a {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 150%;
+  color: rgb(143, 143, 143);
   font-weight: 500;
-  font-size: 16px;
   color: rgb(0, 0, 0);
+  transition: 0.6s ease;
+}
+.header address p {
+  font-weight: 500;
+}
+.header address svg {
+  fill: #FA151C;
+  transition: 0.6s ease;
+}
+.header address svg:hover {
+  fill: rgb(207, 19, 25);
+}
+.header nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(143, 143, 143);
+}
+.header nav ul {
+  display: flex;
+  gap: 40px;
+  margin: 11px 0 18px;
+}
+.header__logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
 }
 .header__menu nav {
   display: none;
 }
 .header__menu {
-  display: none;
+  display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .header__menu .burger-menu {
   height: 24px;
+  display: none;
   width: 24px;
   position: relative;
 }
@@ -41,6 +100,161 @@
   height: 2px;
   background: #FA151C;
   width: 100%;
+}
+
+.booking {
+  position: relative;
+}
+.booking h1 {
+  font-size: 50px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+.booking .container {
+  border-radius: 20px;
+  overflow: hidden;
+}
+.booking .container::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)), rgba(0, 0, 0, 0.4);
+}
+.booking .star {
+  height: -moz-max-content;
+  height: max-content;
+  padding: 6px;
+  background: rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 30px;
+  max-width: 30px;
+  max-height: 30px;
+}
+.booking .form h2 {
+  margin-bottom: 15px;
+}
+.booking .form {
+  color: rgb(255, 255, 255);
+}
+.booking .wrapper-inside {
+  padding: 54px 0 61px;
+  display: flex;
+  min-height: 670px;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+.booking__background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  z-index: 0;
+}
+.booking__info {
+  color: rgb(255, 255, 255);
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+.booking__info-text p {
+  max-width: 398px;
+  color: rgb(255, 255, 255);
+}
+.booking__rating {
+  display: flex;
+  position: relative;
+  top: -7px;
+  gap: 7px;
+}
+.booking__rating svg {
+  stroke: currentColor;
+}
+
+.form {
+  position: relative;
+  z-index: 1;
+}
+.form svg {
+  stroke: currentColor;
+}
+.form fieldset {
+  display: flex;
+  align-items: center;
+  max-width: 621px;
+  justify-content: space-between;
+  padding: 5px 20px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  box-sizing: border-box;
+  flex: 4 1;
+  cursor: pointer;
+}
+.form fieldset h3 {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 150%;
+}
+.form form {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.form button {
+  flex: 1 1;
+  min-width: -moz-max-content;
+  min-width: max-content;
+  text-align: center;
+}
+
+.advantages {
+  margin-top: 32px;
+}
+.advantages ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.advantages ul li {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.advantages p {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  color: rgb(0, 0, 0);
+  font-weight: 400;
+  font-family: "Geologica", sans-serif;
+}
+
+.hotel {
+  margin-top: 100px;
+}
+.hotel__top {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.hotel__top > span {
+  flex-grow: 1;
+  border-bottom: 1px solid rgb(230, 230, 230);
 }
 
 @font-face {
@@ -66,17 +280,46 @@
   font-weight: 500;
   font-style: normal;
 }
-body {
+.icon-in-circle {
+  background: #FA151C;
+  width: -moz-max-content;
+  width: max-content;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  color: white;
+  padding: 8px;
+}
+.icon-in-circle svg {
+  stroke: currentColor;
+}
+
+body, html {
   font-family: "Involve", sans-serif;
   margin: 0;
+  height: 100vh;
 }
 
 address {
   font-style: normal;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   margin: 0;
+}
+
+fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
 }
 
 ul {
@@ -89,11 +332,81 @@ a {
   color: currentColor;
   text-decoration: none;
 }
+a span {
+  display: flex;
+  align-items: center;
+  color: rgb(0, 0, 0);
+  transition: 0.6s ease;
+  gap: 11px;
+}
+a span svg {
+  fill: #FA151C;
+  stroke: currentColor;
+  color: #FA151C;
+  transition: 0.6s ease;
+}
+a span:hover svg {
+  fill: rgb(207, 19, 25);
+  color: rgb(207, 19, 25);
+}
+a:hover span {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+input {
+  background: transparent;
+  border: none;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 150%;
+  color: rgb(143, 143, 143);
+  color: currentColor;
+}
+input:focus {
+  outline: none;
+}
+input {
+  padding: 0;
+}
+
+.container {
+  max-width: 1920px;
+  width: calc(100% - 80px);
+  position: relative;
+  margin: 0 auto;
+  height: 100%;
+}
+
+button {
+  padding: 20px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  border: none;
+  background: #FA151C;
+  color: rgb(255, 255, 255);
+  border-radius: 30px;
+  transition: 0.6s ease;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  justify-content: center;
+}
+button:hover {
+  background-color: rgb(207, 19, 25);
+}
+button::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  background-color: currentColor;
+  border-radius: 50%;
+}
 
 .wrapper-inside {
-  max-width: 1440px;
+  max-width: 1480px;
   margin: 0 auto;
-  width: calc(100% - 20px);
 }
 
 .telegram {
@@ -113,8 +426,8 @@ h2 {
 }
 
 p {
-  font-family: "Geologica", sans-serif;
   font-weight: 300;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 150%;
+  color: rgb(143, 143, 143);
 }

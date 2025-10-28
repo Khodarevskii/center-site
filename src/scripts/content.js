@@ -1,5 +1,5 @@
 const images = require.context('../images', false, /\.(png|jpe?g|gif|svg|webp)$/);
-import Swiper from 'swiper';
+
 import 'swiper/css';
 import '../fonts/Geologica.ttf';
 import '../fonts/Involve-Regular.ttf';

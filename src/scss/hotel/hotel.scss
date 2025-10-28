@@ -1,0 +1,15 @@
+@use "../root/root.scss" as root;
+
+.hotel{
+    margin-top: 100px;
+    &__top{
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        & > span{
+            flex-grow: 1;
+            border-bottom:1px solid  root.$line-color;
+        }
+        
+    }
+}

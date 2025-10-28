@@ -1,7 +1,9 @@
 @use "./root/root.scss" as root;
 @use "./header/header.scss";
 @use "./booking/booking.scss";
-
+@use "./form/form.scss";
+@use "./advantages/advantages.scss";
+@use "./hotel/hotel.scss";
 @font-face {
   font-display: swap;
   font-family: "Geologica";
@@ -30,9 +32,26 @@
   font-style: normal;
 }
 
-body {
+
+.icon-in-circle{
+    background: root.$accent-color;
+    width: max-content;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    color: white;
+    padding: 8px;
+    & svg{
+        stroke: currentColor;
+    }
+}
+
+body,html {
   font-family: "Involve", sans-serif;
   margin: 0;
+  height: 100vh;
 }
 address {
   font-style: normal;
@@ -45,6 +64,12 @@ h5,
 h6,
 p {
   margin: 0;
+}
+
+fieldset{
+  border: none;
+  margin: 0;
+  padding: 0;
 }
 
 ul {
@@ -79,6 +104,17 @@ a {
 }
 
 
+input{
+  background: transparent;
+  border: none;
+  @include root.p1;
+  color: currentColor;
+  &:focus{
+    outline: none;
+  }
+  padding: 0;
+}
+
 .container{
   max-width: 1920px;
   width: calc(100% - 80px);
@@ -98,6 +134,8 @@ button {
   border-radius: 30px;
   transition: 0.6s ease;
   cursor: pointer;
+  @include root.big-button-text;
+  justify-content: center;
   &:hover {
     background-color: root.$accent-color-hover;
   }
@@ -113,7 +151,6 @@ button {
 .wrapper-inside {
   max-width: 1480px;
   margin: 0 auto;
-  width: calc(100% - 20px);
 }
 
 .telegram {

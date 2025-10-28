@@ -26,6 +26,7 @@
       "./broomstick.svg": "./src/images/broomstick.svg",
       "./calendar.svg": "./src/images/calendar.svg",
       "./car.svg": "./src/images/car.svg",
+      "./circle.svg": "./src/images/circle.svg",
       "./clock.png": "./src/images/clock.png",
       "./diner.svg": "./src/images/diner.svg",
       "./family.png": "./src/images/family.png",
@@ -39,13 +40,16 @@
       "./marry.png": "./src/images/marry.png",
       "./parcking.svg": "./src/images/parcking.svg",
       "./people.svg": "./src/images/people.svg",
+      "./pet.min.svg": "./src/images/pet.min.svg",
       "./pet.svg": "./src/images/pet.svg",
+      "./plus.svg": "./src/images/plus.svg",
       "./presentation.png": "./src/images/presentation.png",
       "./room.png": "./src/images/room.png",
       "./slider1.png": "./src/images/slider1.png",
       "./star.svg": "./src/images/star.svg",
       "./telegram.svg": "./src/images/telegram.svg",
       "./tv.svg": "./src/images/tv.svg",
+      "./whatsapp.min.svg": "./src/images/whatsapp.min.svg",
       "./whatsapp.svg": "./src/images/whatsapp.svg",
       "./white-room.png": "./src/images/white-room.png",
       "./wifi.svg": "./src/images/wifi.svg",
@@ -107,6 +111,10 @@
     "use strict";
     module.exports = __webpack_require__.p + "images/car.svg";
   },
+  "./src/images/circle.svg": (module, __unused_webpack_exports, __webpack_require__) => {
+    "use strict";
+    module.exports = __webpack_require__.p + "images/circle.svg";
+  },
   "./src/images/clock.png": (module, __unused_webpack_exports, __webpack_require__) => {
     "use strict";
     module.exports = __webpack_require__.p + "images/clock.png";
@@ -159,9 +167,17 @@
     "use strict";
     module.exports = __webpack_require__.p + "images/people.svg";
   },
+  "./src/images/pet.min.svg": (module, __unused_webpack_exports, __webpack_require__) => {
+    "use strict";
+    module.exports = __webpack_require__.p + "images/pet.min.svg";
+  },
   "./src/images/pet.svg": (module, __unused_webpack_exports, __webpack_require__) => {
     "use strict";
     module.exports = __webpack_require__.p + "images/pet.svg";
+  },
+  "./src/images/plus.svg": (module, __unused_webpack_exports, __webpack_require__) => {
+    "use strict";
+    module.exports = __webpack_require__.p + "images/plus.svg";
   },
   "./src/images/presentation.png": (module, __unused_webpack_exports, __webpack_require__) => {
     "use strict";
@@ -187,6 +203,10 @@
     "use strict";
     module.exports = __webpack_require__.p + "images/tv.svg";
   },
+  "./src/images/whatsapp.min.svg": (module, __unused_webpack_exports, __webpack_require__) => {
+    "use strict";
+    module.exports = __webpack_require__.p + "images/whatsapp.min.svg";
+  },
   "./src/images/whatsapp.svg": (module, __unused_webpack_exports, __webpack_require__) => {
     "use strict";
     module.exports = __webpack_require__.p + "images/whatsapp.svg";
@@ -210,13 +230,12 @@
   "./src/scripts/content.js": (__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
     "use strict";
     __webpack_require__.r(__webpack_exports__);
-    var swiper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("./node_modules/swiper/swiper.mjs");
-    var swiper_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("./node_modules/swiper/swiper.css");
-    var _fonts_Geologica_ttf__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("./src/fonts/Geologica.ttf");
-    var _fonts_Involve_Regular_ttf__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__("./src/fonts/Involve-Regular.ttf");
-    var _fonts_Involve_Medium_ttf__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__("./src/fonts/Involve-Medium.ttf");
-    var _fonts_Involve_SemiBold_ttf__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__("./src/fonts/Involve-SemiBold.ttf");
-    var _scss_index_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__("./src/scss/index.scss");
+    var swiper_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("./node_modules/swiper/swiper.css");
+    var _fonts_Geologica_ttf__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("./src/fonts/Geologica.ttf");
+    var _fonts_Involve_Regular_ttf__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("./src/fonts/Involve-Regular.ttf");
+    var _fonts_Involve_Medium_ttf__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__("./src/fonts/Involve-Medium.ttf");
+    var _fonts_Involve_SemiBold_ttf__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__("./src/fonts/Involve-SemiBold.ttf");
+    var _scss_index_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__("./src/scss/index.scss");
     var images = __webpack_require__("./src/images sync \\.(png%7Cjpe?g%7Cgif%7Csvg%7Cwebp)$");
   },
   "./src/scss/index.scss": (__unused_webpack_module, __webpack_exports__, __webpack_require__) => {

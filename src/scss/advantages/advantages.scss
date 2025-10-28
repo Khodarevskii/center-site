@@ -1,0 +1,21 @@
+@use "../root/root.scss" as root;
+.advantages{
+    margin-top: 32px;
+    & ul{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        & li{
+            display: flex;
+            align-items: center;
+            gap:15px;
+        }
+    }
+    & p{
+        @include root.p2;
+        color: root.$text-color-accent;
+        font-weight: 400;
+        font-family: 'Geologica' , sans-serif;
+    }
+
+}
